@@ -1,8 +1,6 @@
 ﻿namespace Business.ADO.Interface
 {
-    public interface IVENICContext
+    public interface IVenicContext : IVENICConectionContext
     {
-        public void Open();
-        public void Close();
     }
 }

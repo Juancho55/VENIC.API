@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "yWnDC0U/uuF68Bn1BsJfgZ5hi02ZmNlZ+cJclTj3QpZKjmMGpF9FhK2qW5yrrFqPDshU3ATlGUBcmUxPyIVbHA==",
+  "dgSpecHash": "K+zWtUJuQ+ofAiNp1/8SNYHknCBkoIN8FTCM9rXA8APOeafu/gyOuDQB5jD/Yx7lJHw7CUYIXA9V1Zculi4BLg==",
   "success": true,
   "projectFilePath": "C:\\Projects\\VENIC\\VENIC.API\\VENIC.API\\Business.ADO\\Business.ADO.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

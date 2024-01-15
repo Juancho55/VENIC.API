@@ -1,26 +1,12 @@
 ﻿using Business.ADO.Interface;
-using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace Business.ADO
 {
-    public class VENICContext(string strContext) : IVENICContext
+    public class VenicContext : VENICConectionContext, IVenicContext
     {
-        public string strContext = strContext;
-        public SqlConnection? conn;
-
-        public void Open()
+        public VenicContext(IConfiguration config, string database) : base(config, database)
         {
-            this.conn = new SqlConnection
-            {
-                ConnectionString = strContext
-            };
-            this.conn.Open();
-        }
-
-        public void Close()
-        {
-            this.conn?.Close();
-            this.conn?.Dispose();
         }
     }
 }
