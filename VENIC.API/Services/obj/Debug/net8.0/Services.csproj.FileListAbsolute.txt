@@ -10,3 +10,11 @@ C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\Services.dll
 C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\Services.pdb
 C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Business.ADO.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Infra.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Model.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Infra.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Model.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\bin\Debug\net8.0\Business.ADO.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Services\obj\Debug\net8.0\Services.csproj.CopyComplete

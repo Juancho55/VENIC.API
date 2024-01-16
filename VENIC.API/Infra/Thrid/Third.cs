@@ -126,7 +126,20 @@ namespace Infra.Thrid
                         response.Thirds?.Add(new Model.Thirds.Third
                         {
                             Id = long.Parse(dr["Id"].ToString()),
-                            FirstName = dr["FirstName"].ToString()
+                            FirstName = dr["FirstName"].ToString(),
+                            SecondName = dr["SecondName"].ToString(),
+                            FirstSurName = dr["FirstSurName"].ToString(),
+                            SecondSurName = dr["SecondSurName"].ToString(),
+                            ComercialName = dr["ComercialName"].ToString(),
+                            DocumentTypeId = int.Parse(dr["DocumentTypeId"].ToString()),
+                            DocumentNumber = dr["DocumentNumber"].ToString(),
+                            GenderId = int.Parse(dr["GenderId"].ToString()),
+                            ThirdTypeId = int.Parse(dr["ThirdTypeId"].ToString()),
+                            BirthDay = Convert.ToDateTime(dr["BirthDay"].ToString()),
+                            LegalDate = Convert.ToDateTime(dr["LegalDate"].ToString()),
+                            CreateDate = Convert.ToDateTime(dr["CreateDate"].ToString()),
+                            UpdateDate = Convert.ToDateTime(dr["UpdateDate"].ToString()),
+                            Active = bool.Parse(dr["Active"].ToString())
                         });
 
             return response;
