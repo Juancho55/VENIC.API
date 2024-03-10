@@ -15,7 +15,6 @@ namespace Services.Services.Third.Mapper
                     Active = requestModel.Active,
                     BirthDay = requestModel.BirthDay,
                     ComercialName = requestModel.ComercialName,
-                    CreateDate = requestModel.CreateDate,
                     DocumentNumber = requestModel.DocumentNumber,
                     DocumentTypeId = requestModel.DocumentTypeId,
                     FirstName = requestModel.FirstName,
@@ -24,8 +23,7 @@ namespace Services.Services.Third.Mapper
                     LegalDate = requestModel.LegalDate,
                     SecondName = requestModel.SecondName,
                     SecondSurName = requestModel.SecondSurName,
-                    ThirdTypeId = requestModel.ThirdTypeId,
-                    UpdateDate = requestModel.UpdateDate
+                    ThirdTypeId = requestModel.ThirdTypeId
                 }
             };
         }

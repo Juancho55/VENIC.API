@@ -137,8 +137,6 @@ namespace Infra.Thrid
                             ThirdTypeId = int.Parse(dr["ThirdTypeId"].ToString()),
                             BirthDay = Convert.ToDateTime(dr["BirthDay"].ToString()),
                             LegalDate = Convert.ToDateTime(dr["LegalDate"].ToString()),
-                            CreateDate = Convert.ToDateTime(dr["CreateDate"].ToString()),
-                            UpdateDate = Convert.ToDateTime(dr["UpdateDate"].ToString()),
                             Active = bool.Parse(dr["Active"].ToString())
                         });
 

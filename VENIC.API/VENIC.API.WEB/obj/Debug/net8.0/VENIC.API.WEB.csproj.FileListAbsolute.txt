@@ -14,7 +14,6 @@ C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.W
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.AssemblyInfoInputs.cache
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.AssemblyInfo.cs
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.csproj.CoreCompileInputs.cache
-C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.sourcelink.json
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\staticwebassets.build.json

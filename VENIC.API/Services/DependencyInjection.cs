@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Services.Services.Authority;
 using Services.Services.Third;
 using System.Reflection;
 
@@ -14,6 +15,7 @@ namespace Services
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             services.AddSingleton<IThirdService, ThirdService>();
+            services.AddSingleton<IAuthorityServie, AuthorityService>();
         }
     }
 }

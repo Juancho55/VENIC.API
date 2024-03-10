@@ -1,5 +1,6 @@
 ﻿using Business.ADO;
 using Business.ADO.Interface;
+using Infra.Autority;
 using Infra.Interfaces;
 using Infra.Thrid;
 using Microsoft.Extensions.Configuration;
@@ -13,6 +14,7 @@ namespace Infra
         {
             services.AddSingleton<IVenicContext, VenicContext>(db => new VenicContext(configuration, "VenicConnectionString"));
             services.AddSingleton<IThrid, Third>();
+            services.AddSingleton<IAuthorityInfra, AuthorityInfra>();
         }
     }
 }

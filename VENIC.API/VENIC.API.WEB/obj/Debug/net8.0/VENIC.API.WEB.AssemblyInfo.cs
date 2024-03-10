@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VENIC.API.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a07bdcecf3182c949cc0a594007a05bd033cf94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94c6c2501e181161e842a54332b181f952692851")]
 [assembly: System.Reflection.AssemblyProductAttribute("VENIC.API.WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VENIC.API.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

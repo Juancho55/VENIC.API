@@ -10,6 +10,18 @@ namespace VENIC.API.WEB.Models.Mapper
         {
             return new RequestModel()
             {
+                BirthDay = model.BirthDay,
+                ComercialName = model.ComercialName,
+                DocumentNumber = model.DocumentNumber,
+                DocumentTypeId = model.DocumentTypeId,
+                FirstName = model.FirstName,
+                FirstSurName = model.FirstSurName,
+                GenderId = model.GenderId,
+                Id = model.Id,
+                LegalDate = model.LegalDate,
+                SecondName = model.SecondName,
+                SecondSurName = model.SecondSurName,
+                ThirdTypeId = model.ThirdTypeId,
                 Active = true
             };
         }

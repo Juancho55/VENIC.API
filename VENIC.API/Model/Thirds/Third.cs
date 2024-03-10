@@ -14,8 +14,6 @@
         public int GenderId { get; set; }
         public DateTime? BirthDay { get; set; }
         public DateTime? LegalDate { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime? UpdateDate { get; set; }
         public bool Active { get; set; }
     }
 }
