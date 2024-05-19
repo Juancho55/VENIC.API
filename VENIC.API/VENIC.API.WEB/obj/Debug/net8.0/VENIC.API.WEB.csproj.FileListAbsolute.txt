@@ -55,3 +55,4 @@ C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Debug\net8.0\Services.pd
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Debug\net8.0\Business.ADO.pdb
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Debug\net8.0\Model.pdb
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Debug\net8.0\swagger\v1\swagger.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Debug\net8.0\VENIC.API.WEB.MvcApplicationPartsAssemblyInfo.cs

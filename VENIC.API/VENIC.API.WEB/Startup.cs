@@ -32,6 +32,15 @@ namespace VENIC.API.WEB
             services.AddMvc();
             services.AddInfraestructure(Configuration);
             services.AddServices(Configuration);
+            services.AddCors(options =>
+            {
+                options.AddPolicy(
+                    name: "AllowOrigin",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                    });
+            });
         }
 
         private string ShemaIdStrategy(Type currentClass)
@@ -43,6 +52,8 @@ namespace VENIC.API.WEB
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors("AllowOrigin");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -51,12 +62,9 @@ namespace VENIC.API.WEB
             {
                 app.UseHsts();
             }
-
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

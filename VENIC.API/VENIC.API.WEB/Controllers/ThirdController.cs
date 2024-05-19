@@ -2,9 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Services.Third;
+using Services.Services.ThirdType;
 using System.Net.Mime;
 using VENIC.API.WEB.Models.Mapper;
 using VENIC.API.WEB.Models.Third;
+using VENIC.API.WEB.Models.ThirdType;
 
 namespace VENIC.API.WEB.Controllers
 {
@@ -17,10 +19,12 @@ namespace VENIC.API.WEB.Controllers
     public class ThirdController : BaseController
     {
         private readonly IThirdService thirdService;
+        private readonly IThirdTypeService thirdTypeService;
 
-        public ThirdController(IMapper mapper, IThirdService thirdService) : base(mapper)
+        public ThirdController(IMapper mapper, IThirdService thirdService, IThirdTypeService thirdTypeService) : base(mapper)
         {
             this.thirdService = thirdService;
+            this.thirdTypeService = thirdTypeService;
         }
 
         [HttpPost]
@@ -36,6 +40,23 @@ namespace VENIC.API.WEB.Controllers
                 return new Result.CreateResult(result);
             }
             catch(Exception ex)
+            {
+                return GetErrorresult(ex);
+            }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("third/Type")]
+        public async Task<IActionResult> ThirdType()
+        {
+            try
+            {
+                List<ResponseThirdType> result = new ThirdTypeMapperAPI().MappResp(await thirdTypeService.GetThirdsType());
+
+                return new Result.CreateResult(result);
+            }
+            catch (Exception ex)
             {
                 return GetErrorresult(ex);
             }

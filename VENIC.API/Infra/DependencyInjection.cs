@@ -15,6 +15,7 @@ namespace Infra
             services.AddSingleton<IVenicContext, VenicContext>(db => new VenicContext(configuration, "VenicConnectionString"));
             services.AddSingleton<IThrid, Third>();
             services.AddSingleton<IAuthorityInfra, AuthorityInfra>();
+            services.AddSingleton<IThirdType, ThirdType>();
         }
     }
 }

@@ -16,13 +16,19 @@ namespace Infra.Autority
             this.context = context;
         }
 
+        private  string setBase64(string? str)
+        {
+            byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes(str);
+            return Convert.ToBase64String(plainTextBytes);
+        }
+
         public async Task<AuthorityResponse> GetAsync(AuthorityRequest authorityRequest)
         {
             AuthorityResponse response = new();
 
             var parameters = new SqlParameter[] {
                 new SqlParameter { ParameterName= "@NAME", SqlDbType = SqlDbType.NVarChar, Value = authorityRequest.Name },
-                new SqlParameter { ParameterName= "@PASS", SqlDbType = SqlDbType.NVarChar, Value = authorityRequest.Password }
+                new SqlParameter { ParameterName= "@PASS", SqlDbType = SqlDbType.NVarChar, Value = setBase64(authorityRequest.Password) }
             };
 
             DataSet dts = await context.Fill("SECURITYSYSTEM.Sp_Authority", parameters);
