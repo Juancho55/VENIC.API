@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Services.Services.Authority;
+using Services.Services.DocumentType;
 using Services.Services.Third;
 using Services.Services.ThirdType;
 using System.Reflection;
@@ -18,6 +19,7 @@ namespace Services
             services.AddSingleton<IThirdService, ThirdService>();
             services.AddSingleton<IAuthorityServie, AuthorityService>();
             services.AddSingleton<IThirdTypeService, ThirdTypeService>();
+            services.AddSingleton<IDocumentTypeService, DocumentTypeService>();
         }
     }
 }

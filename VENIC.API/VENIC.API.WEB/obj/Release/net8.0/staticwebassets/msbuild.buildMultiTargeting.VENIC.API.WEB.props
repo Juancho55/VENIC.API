@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VENIC.API.WEB.props" />
+</Project>

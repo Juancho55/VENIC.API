@@ -1,0 +1,13 @@
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\bin\Release\net8.0\Business.ADO.deps.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\bin\Release\net8.0\Business.ADO.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\bin\Release\net8.0\Business.ADO.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.csproj.AssemblyReference.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.AssemblyInfoInputs.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.AssemblyInfo.cs
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.csproj.CoreCompileInputs.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.sourcelink.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\refint\Business.ADO.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\Business.ADO.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Business.ADO\obj\Release\net8.0\ref\Business.ADO.dll

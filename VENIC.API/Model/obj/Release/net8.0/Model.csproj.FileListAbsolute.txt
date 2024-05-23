@@ -1,0 +1,12 @@
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\bin\Release\net8.0\Model.deps.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\bin\Release\net8.0\Model.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\bin\Release\net8.0\Model.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.AssemblyInfoInputs.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.AssemblyInfo.cs
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.csproj.CoreCompileInputs.cache
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.sourcelink.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\refint\Model.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\Model.pdb
+C:\Projects\VENIC\VENIC.API\VENIC.API\Model\obj\Release\net8.0\ref\Model.dll

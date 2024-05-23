@@ -16,6 +16,7 @@ namespace Infra
             services.AddSingleton<IThrid, Third>();
             services.AddSingleton<IAuthorityInfra, AuthorityInfra>();
             services.AddSingleton<IThirdType, ThirdType>();
+            services.AddSingleton<IDocumentType, DocumentType>();
         }
     }
 }

@@ -10,18 +10,18 @@ namespace VENIC.API.WEB.Models.Mapper
         {
             return new RequestModel()
             {
-                BirthDay = model.BirthDay,
-                ComercialName = model.ComercialName,
-                DocumentNumber = model.DocumentNumber,
-                DocumentTypeId = model.DocumentTypeId,
-                FirstName = model.FirstName,
-                FirstSurName = model.FirstSurName,
-                GenderId = model.GenderId,
-                Id = model.Id,
-                LegalDate = model.LegalDate,
-                SecondName = model.SecondName,
-                SecondSurName = model.SecondSurName,
-                ThirdTypeId = model.ThirdTypeId,
+                BirthDay = model?.BirthDay ?? DateTime.Now,
+                ComercialName = model?.ComercialName ?? string.Empty,
+                DocumentNumber = model?.DocumentNumber ?? string.Empty,
+                DocumentTypeId = model?.DocumentTypeId ?? 0,
+                FirstName = model?.FirstName ?? string.Empty,
+                FirstSurName = model?.FirstSurName ?? string.Empty,
+                GenderId = model?.GenderId ?? 0,
+                Id = model?.Id ?? 0,
+                LegalDate = model?.LegalDate ?? DateTime.Now,
+                SecondName = model?.SecondName ?? string.Empty,
+                SecondSurName = model?.SecondSurName ?? string.Empty,
+                ThirdTypeId = model?.ThirdTypeId ?? 0,
                 Active = true
             };
         }
