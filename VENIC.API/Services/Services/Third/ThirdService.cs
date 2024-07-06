@@ -17,5 +17,10 @@ namespace Services.Services.Third
         {
             return await thrid.SaveAsync(new ThirdMap().MapReq(request));
         }
+
+        public async Task<List<ResponseModel>> GetThirdsAsync(RequestModel request)
+        {
+            return new ThirdMap().MapResponse(await thrid.GetAsync(new ThirdMap().MapReq(request)));
+        }
     }
 }

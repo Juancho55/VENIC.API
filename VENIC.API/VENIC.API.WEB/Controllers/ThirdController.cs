@@ -82,5 +82,22 @@ namespace VENIC.API.WEB.Controllers
                 return GetErrorresult(ex);
             }
         }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("third/AllThirds")]
+        public async Task<IActionResult> GetThirds([FromBody] RequestThirdModelAPI modelAPI)
+        {
+            try
+            {
+                List<ResponseThirdModelAPI> result = new ThirdMapperAPI().Mapresponse(await thirdService.GetThirdsAsync(new ThirdMapperAPI().MapReq(modelAPI)));
+
+                return new Result.CreateResult(result);
+            }
+            catch (Exception ex)
+            {
+                return GetErrorresult(ex);
+            }
+        }
     }
 }

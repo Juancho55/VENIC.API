@@ -56,3 +56,9 @@ C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\refint\VE
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\VENIC.API.WEB.pdb
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\VENIC.API.WEB.genruntimeconfig.cache
 C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\ref\VENIC.API.WEB.dll
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\web.config
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\swagger\v1\swagger.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\VENIC.API.WEB.deps.json
+C:\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\bin\Release\net8.0\VENIC.API.WEB\Content\C_C\Projects\VENIC\VENIC.API\VENIC.API\VENIC.API.WEB\obj\Release\net8.0\PubTmp\Out\VENIC.API.WEB.runtimeconfig.json

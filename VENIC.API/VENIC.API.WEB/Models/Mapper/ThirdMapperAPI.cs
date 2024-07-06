@@ -25,5 +25,25 @@ namespace VENIC.API.WEB.Models.Mapper
                 Active = true
             };
         }
+
+        public List<ResponseThirdModelAPI> Mapresponse(List<ResponseModel> response)
+        {
+            return response.Select(s => new ResponseThirdModelAPI()
+            {
+                Active = s.Active,
+                BirthDay = s.BirthDay,
+                ComercialName = s.ComercialName,
+                DocumentNumber = s.DocumentNumber,
+                DocumentTypeId = s.DocumentTypeId,
+                FirstName = s.FirstName,
+                FirstSurName = s.FirstSurName,
+                GenderId = s.GenderId,
+                Id = s.Id,
+                LegalDate = s.LegalDate,
+                SecondName = s.SecondName,
+                SecondSurName = s.SecondSurName,
+                ThirdTypeId = s.ThirdTypeId
+            }).ToList();
+        }
     }
 }

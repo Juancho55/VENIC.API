@@ -102,43 +102,47 @@ namespace Infra.Thrid
             ThirdResponse response = new ThirdResponse();
 
             var parameters = new SqlParameter[] {
-                new SqlParameter { ParameterName= "@ACTION", SqlDbType = SqlDbType.Int, Value = Costants.ActionSave },
-                new SqlParameter { ParameterName= "@ID", SqlDbType = SqlDbType.BigInt,Value = 0},
-                new SqlParameter { ParameterName= "@FIRST_NAME", SqlDbType = SqlDbType.NVarChar,Value = null},
-                new SqlParameter { ParameterName= "@SECOND_NAME", SqlDbType = SqlDbType.NVarChar,Value = null},
-                new SqlParameter { ParameterName= "@FIRST_SURNAME", SqlDbType = SqlDbType.NVarChar,Value = null},
-                new SqlParameter { ParameterName= "@SECOND_SURNAME", SqlDbType =  SqlDbType.NVarChar,Value = null},
-                new SqlParameter { ParameterName= "@COMERCIAL_NAME", SqlDbType = SqlDbType.NVarChar,Value = null},
+                new SqlParameter { ParameterName= "@ACTION", SqlDbType = SqlDbType.Int, Value = Costants.ActionGet -1 },
+                new SqlParameter { ParameterName= "@ID", SqlDbType = SqlDbType.BigInt,Value = thirdCollection.Third.Id},
+                new SqlParameter { ParameterName= "@FIRST_NAME", SqlDbType = SqlDbType.NVarChar,Value = string.Empty},
+                new SqlParameter { ParameterName= "@SECOND_NAME", SqlDbType = SqlDbType.NVarChar,Value = string.Empty},
+                new SqlParameter { ParameterName= "@FIRST_SURNAME", SqlDbType = SqlDbType.NVarChar,Value = string.Empty},
+                new SqlParameter { ParameterName= "@SECOND_SURNAME", SqlDbType =  SqlDbType.NVarChar,Value = string.Empty},
+                new SqlParameter { ParameterName= "@COMERCIAL_NAME", SqlDbType = SqlDbType.NVarChar,Value = string.Empty},
                 new SqlParameter { ParameterName= "@ID_DOCUMENT_TYPE", SqlDbType = SqlDbType.Int,Value = 0},
-                new SqlParameter { ParameterName= "@ID_THIRPARTIE_TYPE", SqlDbType = SqlDbType.Int,Value = 0},
+                new SqlParameter { ParameterName= "@ID_THIRPARTIE_TYPE", SqlDbType = SqlDbType.Int,Value = thirdCollection.Third.ThirdTypeId},
                 new SqlParameter { ParameterName= "@ID_GENDER", SqlDbType = SqlDbType.Int,Value = 0},
                 new SqlParameter { ParameterName= "@DOCUMENTNUMBER", SqlDbType = SqlDbType.NVarChar,Value = string.Empty},
-                new SqlParameter { ParameterName= "@BIRTHDAY_DATE", SqlDbType = SqlDbType.DateTime,Value = null},
-                new SqlParameter { ParameterName= "@LEGAL_DATE", SqlDbType = SqlDbType.DateTime,Value = null},
+                new SqlParameter { ParameterName= "@BIRTHDAY_DATE", SqlDbType = SqlDbType.DateTime,Value = DateTime.Now},
+                new SqlParameter { ParameterName= "@LEGAL_DATE", SqlDbType = SqlDbType.DateTime,Value = DateTime.Now},
                 new SqlParameter { ParameterName= "@ACTIVE", SqlDbType = SqlDbType.Bit,Value = 0}
             };
 
             DataSet dts = await context.Fill("SECURITYSYSTEM.Sp_CRUDTHIRD", parameters);
 
+            List<Model.Thirds.Third> result = new List<Model.Thirds.Third>();
+
             if (dts != null)
                 if (dts.Tables.Count > 0 && dts.Tables[0].Rows.Count > 0)
                     foreach (DataRow dr in dts.Tables[0].Rows)
-                        response.Thirds?.Add(new Model.Thirds.Third
+                        result.Add(new Model.Thirds.Third
                         {
-                            Id = long.Parse(dr["Id"].ToString()),
-                            FirstName = dr["FirstName"].ToString(),
-                            SecondName = dr["SecondName"].ToString(),
-                            FirstSurName = dr["FirstSurName"].ToString(),
-                            SecondSurName = dr["SecondSurName"].ToString(),
-                            ComercialName = dr["ComercialName"].ToString(),
-                            DocumentTypeId = int.Parse(dr["DocumentTypeId"].ToString()),
-                            DocumentNumber = dr["DocumentNumber"].ToString(),
-                            GenderId = int.Parse(dr["GenderId"].ToString()),
-                            ThirdTypeId = int.Parse(dr["ThirdTypeId"].ToString()),
-                            BirthDay = Convert.ToDateTime(dr["BirthDay"].ToString()),
-                            LegalDate = Convert.ToDateTime(dr["LegalDate"].ToString()),
-                            Active = bool.Parse(dr["Active"].ToString())
+                            Id = long.Parse(dr["ID"].ToString()),
+                            FirstName = dr["FIRST_NAME"].ToString(),
+                            SecondName = dr["SECOND_NAME"].ToString(),
+                            FirstSurName = dr["FIRST_SURNAME"].ToString(),
+                            SecondSurName = dr["SECOND_SURNAME"].ToString(),
+                            ComercialName = dr["COMERCIAL_NAME"].ToString(),
+                            DocumentTypeId = int.Parse(dr["ID_DOCUMENT_TYPE"].ToString()),
+                            DocumentNumber = dr["DOCUMENTNUMBER"].ToString(),
+                            GenderId = int.Parse(dr["ID_GENDER"].ToString()),
+                            ThirdTypeId = int.Parse(dr["ID_THIRPARTIE_TYPE"].ToString()),
+                            BirthDay = Convert.ToDateTime(dr["BIRTHDAY_DATE"].ToString() == "" ? null : dr["BIRTHDAY_DATE"].ToString()),
+                            LegalDate = Convert.ToDateTime(dr["LEGAL_DATE"].ToString() == "" ? null : dr["LEGAL_DATE"].ToString()),
+                            Active = bool.Parse(dr["ACTIVE"].ToString())
                         });
+
+            response.Thirds = result;
 
             return response;
         }

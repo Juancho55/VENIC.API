@@ -1,5 +1,4 @@
-﻿using Services.Services.Third.Models;
-using Services.Services.ThirdType.Models;
+﻿using Services.Services.ThirdType.Models;
 
 namespace Services.Services.ThirdType
 {

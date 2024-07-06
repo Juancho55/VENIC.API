@@ -27,5 +27,25 @@ namespace Services.Services.Third.Mapper
                 }
             };
         }
+
+        public List<ResponseModel> MapResponse(ThirdResponse response)
+        {
+            return response.Thirds.Select(s => new ResponseModel()
+            {
+                Active = s.Active,
+                BirthDay = s.BirthDay,
+                ComercialName = s.ComercialName,
+                DocumentNumber = s.DocumentNumber,
+                DocumentTypeId = s.DocumentTypeId,
+                FirstName = s.FirstName,
+                FirstSurName = s.FirstSurName,
+                GenderId = s.GenderId,
+                Id = s.Id,
+                LegalDate = s.LegalDate,
+                SecondName = s.SecondName,
+                SecondSurName = s.SecondSurName,
+                ThirdTypeId = s.ThirdTypeId
+            }).ToList();
+        }
     }
 }
